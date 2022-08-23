@@ -1,14 +1,16 @@
 const cartArray = [];
 
 function display(cartName) {
-    // const addPlayer = document.getElementById('add-name')
+    const addPlayer = document.getElementById('add-name')
+    addPlayer.innerHTML = '';
     for (let i = 0; i < cartName.length; i++) {
-        let Name = cartArray[i].playerName;
-        console.log(Name)
+        let name = cartArray[i].playerName;
+        let list = document.createElement('li')
+        list.innerHTML = ` 
+      <li>${i + 1}. ${name}</li>                 
+        `;
 
-        // let list = document.createElement('li')
-        // list.innerText = Name;
-        // addPlayer.appendChild(list)
+        addPlayer.appendChild(list)
     }
 }
 
@@ -16,7 +18,9 @@ function addToCart(element) {
     const playerName = element.parentNode.parentNode.children[0].innerText;
     const playerobj = {
         playerName: playerName
+
     }
+
     cartArray.push(playerobj);
     display(cartArray)
 
