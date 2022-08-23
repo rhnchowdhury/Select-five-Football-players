@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My best five</title>
+    <title>Choice best five</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 </head>
 
-<body class=" bg-secondary">
+<body class=" bg-slate-900">
 
     <!-- header start -->
 
@@ -22,10 +22,13 @@
                 <img src="image/cover-removebg-preview.png" class="w-70 h-80" alt="cover">
             </div>
             <div class="col-12 col-sm-7 col-md-7 text-center px-sm-4">
-                <h1 class="banner-title pb-4 mt-5 px-sm-0 display-2 text-orange-600">Choose Your Best <span class="position-relative
+                <h1 class="banner-title pb-4 mt-5 px-sm-0 display-2 text-orange-600 text-6xl italic font-bold">Choose
+                    Your Best
+                    <span class="position-relative
     " id="marker-container">Five<img id="marker" class="position-absolute start-50 translate-middle" src=""
-                            alt=""></span></h1>
-                <p class="text-white">We've tried to balance current
+                            alt=""></span>
+                </h1>
+                <p class="text-white text-1xl font-medium">We've tried to balance current
                     form with overall talent as best we can. we've
                     been around the block enough times to know that there will be plenty of dissent from the
                     gallery.</p>
@@ -37,6 +40,8 @@
         <!-- header end -->
     </header>
     <main>
+        <!-- Players Part -->
+
         <section class="mt-5">
 
             <div class="row row-cols-2 row-cols-md-4 g-4 ms-4 me-4 ">
@@ -47,7 +52,7 @@
                             <h2 class="card-title fw-semibold fs-3">Neymar Jr</h2>
                             <p class="card-text">150 Goals . 120 Assist</p>
                             <div class=" mt-3">
-                                <button class="px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
+                                <button class=" px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
                                     onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
@@ -60,7 +65,7 @@
                             <h2 class="card-title fw-semibold fs-3">Lionel Messi</h2>
                             <p class="card-text">200 Goals . 150 Assist</p>
                             <div class=" mt-3">
-                                <button class="px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
+                                <button class=" px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
                                     onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
@@ -73,7 +78,7 @@
                             <h2 class="card-title fw-semibold fs-3">Cristiano Ronaldo</h2>
                             <p class="card-text text-center">200 Goals . 150 Assist</p>
                             <div class=" mt-3">
-                                <button class="px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
+                                <button class=" px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
                                     onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
@@ -98,7 +103,7 @@
                             <h2 class="card-title fw-semibold fs-3">Vinicius Jr</h2>
                             <p class="card-text">50 Goals . 30 Assist</p>
                             <div class=" mt-3">
-                                <button class="px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
+                                <button class=" px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
                                     onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
@@ -111,7 +116,7 @@
                             <h2 class="card-title fw-semibold fs-3">Roberto Firmino</h2>
                             <p class="card-text">70 Goals . 50 Assist</p>
                             <div class=" mt-3">
-                                <button class="px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
+                                <button class=" px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
                                     onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
@@ -124,7 +129,7 @@
                             <h2 class="card-title fw-semibold fs-3">Allision Bekar</h2>
                             <p class="card-text">1 Goals . 50 Save</p>
                             <div class=" mt-3">
-                                <button class="px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
+                                <button class=" px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5"
                                     onclick="addToCart(this)">Select</button>
                             </div>
                         </div>
@@ -140,12 +145,13 @@
 
                         </div>
                         <div class=" mt-3">
-                            <button class="px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5 mt-2"
+                            <button class="px-5 py-1 ml-16 mb-2 bg-primary text-whitetext-center fs-5 mt-2"
                                 onclick="playerCost(this)">Calculate</button>
                         </div>
                         <div class="flex mt-4">
                             <p class="ms-3">Player Expenses</p>
-                            <p class="text-white bg-dark ms-4 me-3">$<span id="total-player-expense"></span> </p>
+                            <p class="text-white bg-dark " style="margin-left: 36%;">$<span
+                                    id="total-player-expense"></span> </p>
                         </div>
                         <div class="flex mt-4">
                             <p class="ms-3  ">Manager</p>
@@ -161,7 +167,7 @@
 
                         </div>
                         <div class=" mt-3">
-                            <button class="px-5 py-1 mb-2 bg-primary text-whitetext-center fs-5 mt-2"
+                            <button class="px-4 py-1 mb-2 bg-primary text-whitetext-center fs-5 mt-2 ml-16"
                                 onclick="totalCost(this)">Calculate
                                 Total</button>
                         </div>
@@ -183,7 +189,6 @@
         crossorigin="anonymous"></script>
     <script src="connect.js"></script>
     <script src="calculate.js"></script>
-
 </body>
 
 </html>
