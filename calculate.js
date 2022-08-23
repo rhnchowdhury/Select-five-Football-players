@@ -1,14 +1,27 @@
 
-document.getElementById('player-price').addEventListener('click', function () {
-    const price = document.getElementById('input-tk')
-    const gtvalue = price.value
-    let cal = cartArray.length;
-    let totalPrice = gtvalue * cal;
-    // console.log(totalPrice)
+function playerCost() {
+    const perPlayerCost = document.getElementById('player-cost');
+    const totalPlayerCostString = perPlayerCost.value * cartArray.length;
+    const totalPlayerCost = parseFloat(totalPlayerCostString);
+    const showPlayerExpense = document.getElementById('total-player-expense');
+    showPlayerExpense.innerText = totalPlayerCost;
 
-    const amount = document.getElementById('total-tk')
-    amount.innerText = totalPrice;
-})
+    const managerCost = document.getElementById('manager-cost');
+    const managerAmountString = managerCost.value;
+    const managerAmount = parseFloat(managerAmountString);
+
+    const coachCost = document.getElementById('coach-cost');
+    const coachAmountString = coachCost.value;
+    const coachAmount = parseFloat(coachAmountString);
+
+    const totalExpense = totalPlayerCost + managerAmount + coachAmount;
+
+    const totalAmount = document.getElementById('total-amount');
+    totalAmount.innerText = totalExpense;
+}
+
+function totalCost() {
+    playerCost();
+}
 
 
-// console.log(cal)
