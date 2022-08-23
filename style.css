@@ -1,14 +1,7 @@
-/* .ami {
-    width: 200%;
+body {
+    background-color: black;
 }
 
-.clr {
-    font-style: initial;
-}
-
-#mon {
-    width: 50px;
-} */
-.btn {
+/* .btn {
     background-color: green;
-}
+} */
